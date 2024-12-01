@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado Silveira</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando o link do Bootstrap para carrossel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1><strong>MINIMERCADO SILVEIRA</strong></h1>
+    </header>
+<!-- Carrossel de Produtos -->
+<section id="produtos">
+    <h2 class="text-center">Produtos</h2>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Produto 1 -->
+            <div class="carousel-item active">
+                <img src="images.jpg" class="d-block w-100" alt="Abacaxi" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Abacaxi Formoso</h5>
+                    <p>R$ 11,90 un.</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Abacaxi Formoso" data-preco="11.90">Comprar</button>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="carousel-item">
+                <img src="maca.webp" class="d-block w-100" alt="Maçã Gala" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maçã Gala</h5>
+                    <p>R$ 5,90 kg</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Maçã Gala" data-preco="5.90">Comprar</button>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="carousel-item">
+                <img src="rucula.webp" class="d-block w-100" alt="Rúcula" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Rúcula</h5>
+                    <p>R$ 3,00 un.</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Rúcula" data-preco="3.00">Comprar</button>
+                </div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="carousel-item">
+                <img src="arroz.jpg" class="d-block w-100" alt="Arroz" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Arroz</h5>
+                    <p>R$ 36,99 - Pacote com 5kg</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Arroz" data-preco="36.99">Comprar</button>
+                </div>
+            </div>
+            <!-- Produto 5 -->
+            <div class="carousel-item">
+                <img src="feijao.webp" class="d-block w-100" alt="Feijão" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Feijão</h5>
+                    <p>R$ 12,99 - Pacote com 1kg</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Feijão" data-preco="12.99">Comprar</button>
+                </div>
+            </div>
+            <!-- Produto 6 -->
+            <div class="carousel-item">
+                <img src="pasta_de_dente.webp" class="d-block w-100" alt="Pasta de Dente" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pasta de Dente</h5>
+                    <p>R$ 2,99 un.</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Pasta de Dente" data-preco="2.99">Comprar</button>
+                </div>
+            </div>
+            <!-- Produto 7 -->
+            <div class="carousel-item">
+                <img src="papel_higienico.webp" class="d-block w-100" alt="Papel Higiênico" height="300">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Papel Higiênico</h5>
+                    <p>R$ 14,90 - 12 rolos com 30 metros cada</p>
+                    <button class="add-to-cart btn btn-success" data-nome="Papel Higiênico" data-preco="14.90">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Controles do Carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<!-- Seção de Loja Online - Produtos em 2 Colunas -->
+<section id="loja" class="container mt-5">
+    <h2 class="text-center mb-4">Loja Online</h2>
+    <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="images.jpg" class="card-img-top" alt="Abacaxi Formoso" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Abacaxi Formoso</h5>
+                    <p class="card-text">R$ 11,90 un.</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Abacaxi Formoso" data-preco="11.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="maca.webp" class="card-img-top" alt="Maçã Gala" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Maçã Gala</h5>
+                    <p class="card-text">R$ 5,90 kg</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Maçã Gala" data-preco="5.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 3 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="rucula.webp" class="card-img-top" alt="Rúcula" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Rúcula</h5>
+                    <p class="card-text">R$ 3,00 un.</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Rúcula" data-preco="3.00">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="arroz.jpg" class="card-img-top" alt="Arroz" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Arroz</h5>
+                    <p class="card-text">R$ 36,99 - Pacote com 5kg</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Arroz" data-preco="36.99">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 5 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="feijao.webp" class="card-img-top" alt="Feijão" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Feijão</h5>
+                    <p class="card-text">R$ 12,99 - Pacote com 1kg</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Feijão" data-preco="12.99">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 6 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="pasta_de_dente.webp" class="card-img-top" alt="Pasta de Dente" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Pasta de Dente</h5>
+                    <p class="card-text">R$ 2,99 un.</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Pasta de Dente" data-preco="2.99">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 7 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="papel_higienico.webp" class="card-img-top" alt="Papel Higiênico" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Papel Higiênico</h5>
+                    <p class="card-text">R$ 14,90 - 12 rolos com 30 metros cada</p>
+                    <button class="btn btn-primary add-to-cart" data-nome="Papel Higiênico" data-preco="14.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Carrinho de Compras -->
+    <section>
+        <h2 class="text-center">Carrinho de Compras</h2>
+        <ul id="carrinho" class="list-group"></ul>
+        <p id="total">Total: R$ 0.00</p>
+        <button id="clear-cart">Limpar Carrinho</button>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section>
+        <h2>Cadastro de Cliente</h2>
+        <form id="formCadastro">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" required>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="sexo" class="form-label">Sexo:</label><br>
+                <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino
+                <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino
+            </div>
+            <div class="mb-3">
+                <label for="servico" class="form-label">Selecione a forma de entrega:</label><br>
+                <input type="radio" id="retirada" name="servico" value="retirada" required> Retirada no Local<br>
+                <input type="radio" id="teleEntrega" name="servico" value="teleEntrega" required> Tele-entrega
+            </div>
+            <div class="mb-3">
+                <label for="dataAgendamento" class="form-label">Data e Hora de Agendamento:</label>
+                <input type="datetime-local" class="form-control" id="dataAgendamento" name="dataAgendamento" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
